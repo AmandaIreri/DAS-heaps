@@ -18,6 +18,6 @@ def build_max_heap(A):
     n = int((len(A)//2)-1)
     for k in range(n, -1, -1):
         max_heapify(A, k)
-A = [3, 9, 2, 1, 4, 5]
+A = [3, 8, 2, 1, 4, 5]
 build_max_heap(A)
 print(A)
