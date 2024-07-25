@@ -1,6 +1,6 @@
 def max_heapify(A, k):
     l = left(k)
-    r = right(k) # Correctly passing 'k' to the right function
+    r = right(k) 
     if l < len(A) and A[l] > A[k]:
         largest = l
     else:
@@ -12,8 +12,8 @@ def max_heapify(A, k):
         max_heapify(A, largest)
 def left(k):
     return 2 * k + 1
-def right(i): # Corrected to use 'i' instead of 'k'
-    return 2 * i + 2 # Corrected to use 'i' instead of 'k'
+def right(i): 
+    return 2 * i + 2 
 def build_max_heap(A):
     n = int((len(A)//2)-1)
     for k in range(n, -1, -1):
